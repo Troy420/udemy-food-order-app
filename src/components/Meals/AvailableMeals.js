@@ -46,7 +46,6 @@ const AvailableMeals = () => {
               />
             );
           })}
-          ;
         </ul>
       </Card>
     </section>
