@@ -32,23 +32,25 @@ const DUMMY_MEALS = [
 
 const AvailableMeals = () => {
   return (
-    <section className={styles.meals}>
-      <Card>
-        <ul>
-          {DUMMY_MEALS.map((meal) => {
-            return (
-              <MealItem
-                key={meal.id}
-                id={meal.id}
-                name={meal.name}
-                description={meal.description}
-                price={meal.price}
-              />
-            );
-          })}
-        </ul>
-      </Card>
-    </section>
+    <>
+      <section className={styles.meals}>
+        <Card>
+          <ul>
+            {DUMMY_MEALS.map((meal) => {
+              return (
+                <MealItem
+                  key={meal.id}
+                  id={meal.id}
+                  name={meal.name}
+                  description={meal.description}
+                  price={meal.price}
+                />
+              );
+            })}
+          </ul>
+        </Card>
+      </section>
+    </>
   );
 };
 
