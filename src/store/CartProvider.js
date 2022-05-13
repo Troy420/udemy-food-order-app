@@ -6,7 +6,9 @@ const CartProvider = (props) => {
     console.log(item);
   };
 
-  const removeItemFromCartHandler = (id) => {};
+  const removeItemFromCartHandler = (id) => {
+    console.log(id);
+  };
 
   return (
     <CartContext.Provider

@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import Header from "./components/Layout/Header";
 import Meals from "./components/Meals/Meals";
 import Cart from "./components/Cart/Cart";
@@ -14,8 +14,6 @@ const App = () => {
   const closeModalHandler = () => {
     setOpenModal(false);
   };
-
-  const ctx = useContext(CartProvider);
 
   return (
     <CartProvider>
