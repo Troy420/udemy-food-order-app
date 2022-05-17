@@ -10,8 +10,6 @@ const HeaderCartButton = (props) => {
     return accumulator + item.amount;
   }, 0);
 
-  console.log(numberOfCartItems);
-
   return (
     <button className={cssClasses.button} onClick={props.onOpenModal}>
       <span className={cssClasses.icon}>

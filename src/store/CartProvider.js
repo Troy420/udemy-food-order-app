@@ -45,10 +45,10 @@ const CartProvider = (props) => {
         items: cartState.items,
         totalAmount: cartState.totalAmount,
         addItem: (item) => {
-          addItemToCartHandler;
+          addItemToCartHandler(item);
         },
         removeItem: (id) => {
-          removeItemFromCartHandler;
+          removeItemFromCartHandler(id);
         },
       }}
     >

@@ -11,10 +11,11 @@ const MealItemForm = (props) => {
     event.preventDefault();
 
     const enteredAmount = amountInputRef.current.value;
+
     const enteredAmountNumber = +enteredAmount;
 
     if (
-      enteredAmountNumber.trim().length === 0 ||
+      enteredAmount.trim().length === 0 ||
       enteredAmountNumber < 1 ||
       enteredAmountNumber > 5
     ) {
@@ -29,8 +30,8 @@ const MealItemForm = (props) => {
     <form action="" className={styles.form} onSubmit={submitHandler}>
       <Input
         label="Amount"
+        ref={amountInputRef}
         input={{
-          ref: { amountInputRef },
           id: "amount_" + props.id,
           type: "number",
           min: "1",
